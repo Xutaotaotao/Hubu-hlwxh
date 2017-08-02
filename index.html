@@ -16,10 +16,11 @@ Author URL: http://www.xutaotao.cn/
 	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 </script>
 <!-- bootstrap-css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" >
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" >
 <!--// bootstrap-css -->
 <!-- css -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" >
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" >
+	<link rel="stylesheet" type="text/css" href="css/animate.css" media="all">
 <!--// css -->
 <!-- jquery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -28,7 +29,7 @@ Author URL: http://www.xutaotao.cn/
 <body>
 
 <!-----导航------>
-<div class="header">
+<header class="header">
 	<div class="container">
 		<div class="header-left">
 			<a href="index.html"><img src="images/logo.png" alt=""/></a>
@@ -54,11 +55,11 @@ Author URL: http://www.xutaotao.cn/
 		</div>
 		<div class="clearfix"></div>
 	</div>
-</div>
+</header> 
 <!--//导航结束-->
 
 <!--banner-->
-<div id="home" class="banner">
+<section id="home" class="banner">
 	<div class="container">
 			<!-- 过渡响应动画-->
 					<script src="js/responsiveslides.min.js"></script>
@@ -112,32 +113,41 @@ Author URL: http://www.xutaotao.cn/
 			</ul>
 		</div>
 	</div>
-</div>
+</section> 
 <!--//banner结束-->
 
 <!--关于我们-->
-<div id="about" >
-</div>
+<section id="about" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/bg.jpg">
+			</div>
+			<div class="col-md-6"></div>
+		</div>
+	</div>
+</section>
 <!--//关于我们结束-->
-<div class="behind">
+
+<!-- <div class="behind">
 	<div class="container">
 		<p>“我们因兴趣而生，我们为技术而聚。”</p>
 	</div>
-	</div>
+</div> -->
 <!--services-->
-<div id="services" class="services">
+<!-- <div id="services" class="services">
 	<div class="container">
 		<h3 style="color: purple">我们的目标</h3>
 	</div>
-</div>
+</div> -->
 <!--//services-->
-<div class="services-grids">
+<!-- <div class="services-grids">
 	<div class="services-left">
 		<p style="font-size: 18px ">我们将会尽自己最大的努力让协会成员学到技术，不辜负大家对协会的期望。</p>
 	</div>
 	<div class="services-right">
 		<div class="services-list">
-			<ul>
+			<ul class="animated rubberBand">
 				<li>Ps，Pr, Ae 培训</li>
 				<li>公众号运营学习</li>
 				<li>资源分享</li>
@@ -167,7 +177,8 @@ Author URL: http://www.xutaotao.cn/
 	<div class="container">
 		<p>Copyright &copy; 2016 湖北大学互联网协会 </p>
 	</div>
-</div>
+</div> -->
+
 <!--//footer-->
 
 <!-- start-smoth-scrolling -->

@@ -213,6 +213,15 @@ left:46%;
 	background: #ffffff;
 }
 /*-- Slider 结束 --*/
+/*关于我们*/
+#about {
+	background-color: #fbfbfb;
+}
+#about img{
+	max-width: 100%;
+    height: auto;
+}
+/*关于我们结束*/
 .behind{
 background: #d617cf;
 background: -moz-linear-gradient(left,  #d617cf 0%, #d318ce 0%, #3c39ad 100%, #2989d8 100%, #207cca 100%, #4637af 100%, #2989d8 100%);
@@ -442,40 +451,7 @@ color:#ffffff;
 	filter: alpha(opacity=0);
 }
 /*-- //to-top --*/
-/*-- contact --*/
-/*.contact {*/
-/*padding: 70px 0;*/
-	/*}*/
-/*.contact-info {*/
-	/*margin-bottom: 52px;*/
-	/*}*/
-/*.contact-left{*/
-	/*width:30%;*/
-	/*float:left;*/
-	/*}*/
-/*.contact-right{*/
-	/*width:68%;*/
-	/*float:right;*/
-	/*}*/
-/*.contact-left input[type="text"]{*/
-	/*width: 93%;*/
-	/*color:#4038ae;*/
-	/*margin: 0 23px 23px 0;*/
-	/*font-size:16px;*/
-	/*padding: 12px 10px;*/
-	/*outline: none;*/
-	/*border: 1px solid #e8e8e8;*/
-	/*}*/
-/*.contact-right textarea{*/
-	/*width: 100%;*/
-	/*color:#4038ae;*/
-	/*font-size:16px;*/
-	/*resize: none;*/
-	/*height: 185px;*/
-	/*padding: 12px;*/
-	/*outline: none;*/
-	/*border: 1px solid #e8e8e8;*/
-	/*}*/
+
 .contact-form input[type=submit] {
 	color: #ffffff;
 	padding: 13px 43px;
@@ -496,35 +472,7 @@ color:#ffffff;
 	background: -ms-linear-gradient(left,  #d617cf 0%,#d318ce 0%,#3c39ad 100%,#2989d8 100%,#207cca 100%,#4637af 100%,#2989d8 100%);
 	background: linear-gradient(to right,  #d617cf 0%,#d318ce 0%,#3c39ad 100%,#2989d8 100%,#207cca 100%,#4637af 100%,#2989d8 100%);
 	}
-/*.contact-form input[type=submit]:hover {*/
-	/*background:#4038ae;*/
-	/*transform: rotateY(360deg);*/
-	/*transition: .5s all;*/
-	/*-webkit-transition: .5s all;*/
-	/*-o-transition: .5s all;*/
-	/*-ms-transition: .5s all;*/
-	/*-moz-transition: .5s all;	*/
-	/*}*/
-/*.contact-info h3{*/
-  /*margin: 0;*/
-  /*color: #d717cf;*/
-  /*font-size: 36px;*/
-  /*font-weight: bold;*/
-/*}*/
-/*.contact-info h3 span {*/
-  /*color: #4038ae;*/
-/*}*/
-/*.contact-map{*/
-/*width:100%;*/
-/*height:330px;*/
-/*margin-bottom: 52px;*/
-/*}*/
-/*.contact-map iframe{*/
-/*width:100%;*/
-/*height:330px;*/
-/*}*/
-/*-- //contact --*/
-/*-- responsive-media-queries --*/
+
 @media(max-width:1440px){
 	.about-info {
 	 margin: 72px 0px 0 137px;
