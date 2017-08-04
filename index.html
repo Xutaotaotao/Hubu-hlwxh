@@ -1,213 +1,168 @@
-<!--
-Author: 徐涛焘
-Author URL: http://www.xutaotao.cn/
--->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset=”utf-8″ />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="湖北大学互联网协会,湖北大学，互联网协会" />
-<meta name="author" content="徐涛焘">
-<meta name="description" content="湖北大学互联网协会">
-<title>湖北大学互联网协会</title>
-<script type="application/x-javascript">
-	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
-</script>
-<!-- bootstrap-css -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" >
-<!--// bootstrap-css -->
-<!-- css -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" >
-	<link rel="stylesheet" type="text/css" href="css/animate.css" media="all">
-<!--// css -->
-<!-- jquery -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-<!-- //jquery-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Full Slider - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+        <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+    <![endif]-->
+
 </head>
+
 <body>
 
-<!-----导航------>
-<header class="header">
-	<div class="container">
-		<div class="header-left">
-			<a href="index.html"><img src="images/logo.png" alt=""/></a>
-		</div>
-		<div class="header-right">
-			<span class="menu">MENU</span>
-					<ul class="nav1">
-						<li><a class="scroll active" href="#home">首页</a></li>
-						<li><a class="scroll" href="#about">关于我们</a></li>	
-						<li><a href="dongtai.html">最新动态</a></li>
-						<li><a href="jishu.html">技术支持</a></li>
-						<li><a class="scroll"  href="#keep">联系我们</a></li>
-					</ul>
-				<!-- script for menu -->
-						<script> 
-							$( "span.menu" ).click(function() {
-							$( "ul.nav1" ).slideToggle( 300, function() {
-							 // Animation complete.
-							});
-							});
-						</script>
-				<!-- //script for menu -->
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</header> 
-<!--//导航结束-->
+    <!-- 导航 -->
+<header id="wx-header">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <section class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <section class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">互联网协会</a>
+            </section>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <section class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">技术</a>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.navbar-collapse -->
+        </section>
+        <!-- /.container -->
+    </nav>
+</header>
+    <!-- 导航结束 -->
+    <!-- 首页背景-->
+<section id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-<!--banner-->
-<section id="home" class="banner">
-	<div class="container">
-			<!-- 过渡响应动画-->
-					<script src="js/responsiveslides.min.js"></script>
-						<script>
-							$(function () {
-							$("#slider").responsiveSlides({
-								auto: true,
-								pager: true,
-								nav: false,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-							$('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-								$('.events').append("<li>after event fired.</li>");
-								}
-								});
-								});
-					</script>
-				<!-- 过渡响应动画结束-->
-		<div  id="top" class="callbacks_container">
-			<ul class="slides" id="slider">
-				<li>
-					<div class="banner-info text-center">
-						<h1>欢迎来到互联网协会</h1>
-						<p>Welcome to the Internet Society of Hubu.</p>
-						<div class="start">
-								<a href="#about" class="btn btn-border btn-big">开始了解我们</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="banner-info text-center">
-						<h1>技术 & 实践</h1>
-						<p>You can get skills and practice.</p>
-						<div class="start">
-								<a href="#about" class="btn btn-border btn-big">开始了解我们</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="banner-info text-center">
-						<h1>网络 + 应用</h1>
-						<p>Do something interesting on the internet.</p>
-						<div class="start">
-								<a href="#about" class="btn btn-border btn-big">开始了解我们</a>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-</section> 
-<!--//banner结束-->
+        <!-- Wrapper for Slides -->
+        <section class="carousel-inner">
+            <section class="item active">
+                <section class="fill" style="background-image:url(img/bg1.jpg);"></section>
+                <section class="carousel-caption">
+                    <h2 class="animated fadeInLeftBig">欢迎来到互联网协会</h2>
+                    <p class="animated fadeInRightBig">Welcome to the Internet Society of Hubu.</p>
+                </section>
+            </section>
+            <section class="item">
+                <section class="fill" style="background-image:url('img/bg2.jpg');"></section>
+                <section class="carousel-caption">
+                    <h2 class="animated fadeInDownBig">技术 & 实践</h2>
+                    <p class="animated fadeInUpBig">You can get skills and practice.</p>
+                </section>
+            </section>
+            <section class="item">
+                <section class="fill" style="background-image:url(img/bg3.jpg);"></section>
+                <section class="carousel-caption">
+                    <h2 class="animated rollIn">网络 + 应用</h2>
+                    <p class="animated rotateInUpRight">Do something interesting on the internet.</p>
+                </section>
+            </section>
+        </section>
 
-<!--关于我们-->
-<section id="about" >
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<img src="images/bg.jpg">
-			</div>
-			<div class="col-md-6"></div>
-		</div>
-	</div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
 </section>
-<!--//关于我们结束-->
+    <!-- 首页背景结束-->
 
-<!-- <div class="behind">
-	<div class="container">
-		<p>“我们因兴趣而生，我们为技术而聚。”</p>
-	</div>
-</div> -->
-<!--services-->
-<!-- <div id="services" class="services">
-	<div class="container">
-		<h3 style="color: purple">我们的目标</h3>
-	</div>
-</div> -->
-<!--//services-->
-<!-- <div class="services-grids">
-	<div class="services-left">
-		<p style="font-size: 18px ">我们将会尽自己最大的努力让协会成员学到技术，不辜负大家对协会的期望。</p>
-	</div>
-	<div class="services-right">
-		<div class="services-list">
-			<ul class="animated rubberBand">
-				<li>Ps，Pr, Ae 培训</li>
-				<li>公众号运营学习</li>
-				<li>资源分享</li>
-				<li>线下沙龙交流</li>
-				<li>互联网思维传播</li>
-			</ul>
-		</div>
-	</div>
-	<div class="clearfix"></div>
-</div>
-<div id="keep">
-<div class="keep">
-	<div class="container">
-		<h3>请联系我们</h3>
-		<ul>
-			<li><img src="images/Wechat.jpg">
-			<p>协会公众号</p></li>
-			<li><img src="images/qq.jpg">
-			<p>协会官方QQ</p></li>
-			<li><img src="images/qq-group.jpg">
-			<p>协会交流群</p></li>
-		</ul>
-	</div>
-</div>
-</div>
-<div class="footer">
-	<div class="container">
-		<p>Copyright &copy; 2016 湖北大学互联网协会 </p>
-	</div>
-</div> -->
+    <!-- Page Content -->
+<section id="about">
+    <section class="container">
+        <section class="row">
+            <section class="col-md-12">
+                <h2>关于我们</h2>
+                <p>湖北大学互联网协会成立于2005年，原隶属于湖北大学数学与计算机科学学院，现属于计算机与信息工程学院。
+                    协会致力于服务同学，为同学解决困难，增强会员对计算机软件操作及互联网应用的能力，本协会为努力创建湖北大学的特色社团奋斗。</p>
+            </section>
 
-<!--//footer-->
+            <section class="col-md-4">
+                <img src="img/Hubu-hlwxh.jpg" alt="logo">
+            </section>
+            <section class="col-md-8">
+                <h2>关于我们</h2>
+                <p>湖北大学互联网协会成立于2005年，原隶属于湖北大学数学与计算机科学学院，现属于计算机与信息工程学院。
+                    协会致力于服务同学，为同学解决困难，增强会员对计算机软件操作及互联网应用的能力，本协会为努力创建湖北大学的特色社团奋斗。</p>
+            </section>
+        </section>
+    </section>
+</section>
+    <section class="container">
+        <section class="row">
+            <section class="col-lg-12">
+                <h1>Full Slider by Start Bootstrap</h1>
+                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>full-slider.css</code>file.</p>
+            </section>
+        </section>
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <section class="row">
+                <section class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </section>
+            </section>
+            <!-- /.row -->
+        </footer>
 
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-    });
-</script>
-<!-- start-smoth-scrolling -->
-<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear'
-			};
-		*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
+    </section>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
 </body>
+
 </html>
