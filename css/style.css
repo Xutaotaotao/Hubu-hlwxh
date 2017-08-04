@@ -12,6 +12,7 @@
 	font-size: 30px;
 }
 /*导航结束*/
+/*banner*/
 .carousel-caption {
 	position: absolute;
 	right: 15%;
@@ -30,7 +31,39 @@
 .carousel-caption p{
 	font-size: 30px;
 }
+/*banner结束*/
+/*关于我们*/
+#about .row{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#about .col-md-12 h2{
+	color: #337ab7;
+	font-size: 45px;
+}
+#about .col-md-12 p{
+	padding-top: 20px;
+	color: #4a5648;
+	font-size: 30px;
+}
 img {
 	max-width: 100%;
 	height: auto;
+}
+#about .col-md-6{
+	padding-top: 30px;
+}
+#about .col-md-6 p{
+	color: #4a5648;
+	font-size: 18px;
+	padding-bottom: 30px;
+}
+#about .col-md-6 .btn{
+	display: table;
+	margin:0 auto;
+}
+/*技能*/
+#skill {
+	background:#454046;
+	color: #fff ;
 }
