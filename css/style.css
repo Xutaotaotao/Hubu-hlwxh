@@ -67,3 +67,16 @@ img {
 	background:#454046;
 	color: #fff ;
 }
+#skill .row{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#skill .col-md-6{
+	padding-top: 30px;
+}
+#skill .col-md-6 p{
+	padding-top: 20px;
+}
+#skill .col-md-12:last-child{
+	padding-top: 60px;
+}
