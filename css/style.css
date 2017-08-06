@@ -7,8 +7,20 @@ footer {
 }
 /*导航*/
 .navbar-inverse{
-	opacity: 0.8;
+	width: 100%;
+	background: rgba(0, 0, 0, 0);
+	color: #ddd;
+	font-size: 32px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: background 1s;
 	border: none;
+}
+.scrolledDown{
+	background: rgba(0, 0, 0, .9);
+	color: #FFF;
 }
 .navbar-inverse .navbar-brand {
 	color: #fff;
@@ -132,14 +144,13 @@ footer {
 /*关于我们结束*/
 /*组织结构*/
 #organization .organization{
-	background:url("../img/about-bg.jpg");
-	color: #999999;
+
 }
 /*组织结构结束*/
 /*技能*/
 #skill .skill{
-	background:url("../img/skill.jpg");
-	color: #fff ;
+	/*background:url("../img/skill.jpg");*/
+	/*color: #fff ;*/
 }
 #skill .row{
 	padding-top: 40px;
