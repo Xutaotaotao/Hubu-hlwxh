@@ -28,7 +28,7 @@ footer {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
 	color: #438ead;
-	background-color: #b8acb0;
+	background-color: #fff;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -113,11 +113,6 @@ footer {
 	color: #337ab7;
 	font-size: 45px;
 }
-#about .col-md-12 p{
-	padding-top: 20px;
-	color: #4a5648;
-	font-size: 30px;
-}
 #about img {
 	max-width: 100%;
 	height: auto;
@@ -128,13 +123,19 @@ footer {
 #about .col-md-6 p{
 	color: #4a5648;
 	font-size: 18px;
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 }
 #about .col-md-6 .btn{
 	display: table;
 	margin:0 auto;
 }
 /*关于我们结束*/
+/*组织结构*/
+#organization .organization{
+	background:url("../img/about-bg.jpg");
+	color: #999999;
+}
+/*组织结构结束*/
 /*技能*/
 #skill .skill{
 	background:url("../img/skill.jpg");
@@ -162,18 +163,18 @@ footer {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-#wx-footer .footer-left img{
+#wx-footer .footer-right img{
 	width: 70px;
 	height: 70px;
 }
-#wx-footer .footer-left .col-md-4 strong{
+#wx-footer .footer-right .col-md-4 strong{
 	margin: 0px 10px;
 }
 
-#wx-footer .footer-left .col-md-4 p{
+#wx-footer .footer-right .col-md-4 p{
 	padding-top: 20px;
 }
-#wx-footer .footer-left .col-md-4 span{
+#wx-footer .footer-right .col-md-4 span{
 	margin: 0 3px;
 }
 #wx-footer .footer-center .col-md-4 li{
