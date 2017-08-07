@@ -1,3 +1,7 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
 html,
 body {
 	height: 100%;
@@ -19,7 +23,7 @@ footer {
 	border: none;
 }
 .scrolledDown{
-	background: rgba(0, 0, 0, .9);
+	background: rgba(0, 0, 0, 1);
 	color: #FFF;
 }
 .navbar-inverse .navbar-brand {
@@ -28,7 +32,7 @@ footer {
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-	color:#438ead;
+	color: deepskyblue;
 	background-color: transparent;
 }
 .navbar-inverse .navbar-text {
@@ -39,34 +43,36 @@ footer {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-	color: #438ead;
+	color: deepskyblue;
 	background-color: #fff;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #438ead;
+	color: deepskyblue;
 	background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
-	color: #438ead;
+	color: deepskyblue;
 	background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-	border-color: #438ead;
+	color: deepskyblue;
+	border: none;
+	background-color: black;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-	background-color: #438ead;
+	color: deepskyblue;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: #fff;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-	border-color: #101010;
+	border: none;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
@@ -115,6 +121,9 @@ footer {
 .carousel-caption p{
 	font-size: 30px;
 }
+.carousel-caption span{
+	color:deepskyblue;
+}
 /*banner结束*/
 /*关于我们*/
 #about .row{
@@ -137,38 +146,80 @@ footer {
 	font-size: 18px;
 	padding-bottom: 25px;
 }
-#about .col-md-6 .btn{
-	display: table;
-	margin:0 auto;
-}
 /*关于我们结束*/
 /*组织结构*/
 #organization .organization{
-
+	background:url("../img/bgg1.jpg");
+	color: #fff;
+}
+#organization .organization p{
+	padding-top: 20px;
+}
+#organization .organization .col-md-12 h2{
+	font-size: 45px;
+}
+#organization .organization .col-md-6{
+	padding-top: 20px;
+}
+#organization .organization .col-md-6 h2{
+}
+#organization .organization .col-md-3{
+	padding-top: 20px;
+}
+#organization .organization .col-md-3 h2{
 }
 /*组织结构结束*/
 /*技能*/
-#skill .skill{
-	/*background:url("../img/skill.jpg");*/
-	/*color: #fff ;*/
-}
 #skill .row{
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-#skill .col-md-6{
+#skill .col-md-12 h2{
+
+	font-size: 45px;
+}
+#skill .col-md-4{
 	padding-top: 30px;
 }
 #skill .col-md-6 p{
-	padding-top: 20px;
+	padding-top: 30px;
 }
-#skill .col-md-12:last-child{
-	padding-top: 60px;
-}
+
 /*技能结束*/
+/*技术实力*/
+#software .software{
+	background: url("../img/bgg1.jpg");
+	color: #fff;
+}
+#software h2{
+	font-size: 45px;
+}
+#software .row{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#software .col-md-6{
+	padding-top: 40px;
+}
+#software .col-md-6 p{
+	padding-top: 30px;
+}
+/*技术实力结束*/
+/*新闻*/
+#news{
+	padding-top: 40px;
+}
+#news .col-md-12 h2{
+	font-size: 45px;
+	color:#337ab7; ;
+}
+#news .col-sm-6 {
+	padding-top: 40px;
+}
+/*新闻结束*/
 /*页脚*/
 #wx-footer{
-	background:#454046;
+	background:url("../img/bgg1.jpg");
 	color: #fff ;
 	margin-bottom: 0px;
 	padding-top: 40px;
