@@ -264,14 +264,63 @@ footer {
 
 
 /*************************************************协会资源样式结束*******************************************/
+/*************************************************前端导航样式*******************************************/
 
+#frontEnd-bg{
+	background: url("../frontImg/frontEnd.jpg");
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#frontEnd-bg .frontEnd-text{
+	position: absolute;
+	padding-top: 200px;
+	left: 60px;
+	text-align: left;
+	z-index: 10;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+#frontEnd-bg .frontEnd-text h2{
+	font-size: 45px;
+}
+#frontEnd-bg .frontEnd-text p{
+	padding-top: 20px;
+	font-size: 25px;
+}
+/*前端导航背景结束*/
+/*主体内容*/
+#front-content .container{
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: -50px;
+}
+#front-content .container .col-md-2{
+	padding: 0px;
+	background:#0593e5;
+}
+#front-content .container .nav-pills > li > a{
+	color: #fff;
+}
+#front-content .container .nav-pills > li > a:hover,
+#front-content .container .nav-pills > li > a:focus
+{
+	color: #0593e5;
+	background-color:#fff;
+}
+
+/*主体内容结束*/
+
+/*************************************************前端导航样式结束*******************************************/
 /*页脚*/
 #wx-footer{
 	background:url("../img/bgg1.jpg");
 	color: #fff ;
 	margin-bottom: 0px;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 20px;
 }
 #wx-footer .footer-right img{
 	width: 70px;
