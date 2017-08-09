@@ -166,16 +166,14 @@ footer {
 	font-size: 45px;
 }
 #organization .organization .col-md-6{
-	padding-top: 50px;
+	padding-top: 40px;
 }
-#organization .organization .col-md-6 h2{
-}
+
 #organization .organization .col-md-3{
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
-#organization .organization .col-md-3 h2{
-}
+
 /*组织结构结束*/
 /*技能*/
 #skill .row{
