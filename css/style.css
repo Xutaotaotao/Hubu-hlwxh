@@ -25,7 +25,7 @@ footer {
 }
 .scrolledDown{
 	color: #FFF;
-	background: #666699;
+	background:#0593e5;
 }
 .navbar-inverse .navbar-brand {
 	color: #fff;
@@ -302,6 +302,9 @@ footer {
 #front-content .container .col-md-2{
 	padding: 0px;
 	background:#0593e5;
+}
+#front-content .container .nav-pills > li{
+	padding-top: 30px;
 }
 #front-content .container .nav-pills > li > a{
 	color: #fff;
