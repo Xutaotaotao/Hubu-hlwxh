@@ -295,6 +295,7 @@ footer {
 /*主体内容*/
 #front-content .container{
 	margin-left: 0px;
+	margin-right: 0px;
 	padding-left: 0px;
 	margin-bottom: -50px;
 }
@@ -311,8 +312,12 @@ footer {
 	color: #0593e5;
 	background-color:#fff;
 }
+#front-content .container .col-md-10{
+	padding-top: 40px;
+}
 #front-content .container .col-md-10 .col-md-3{
 	padding-top: 40px;
+	padding-left: 20px;
 }
 #front-content .container .col-md-10 .col-md-3 a{
 	text-decoration: none;
@@ -346,7 +351,7 @@ footer {
 }
 #front-content .container .col-md-10 .col-md-3 .item .front-logo{
 	color: #0593e5;
-	font-size: 15px;
+	font-size: 10px;
 	font-weight: 700;
 	height: 40px;
 	overflow: hidden;
