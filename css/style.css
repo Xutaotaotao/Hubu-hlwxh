@@ -1,6 +1,6 @@
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 html,
 body {
@@ -159,9 +159,7 @@ footer {
 	background:url("../img/bgg1.jpg");
 	color: #fff;
 }
-#organization .organization p{
-	padding-top: 20px;
-}
+
 #organization .organization .col-md-12 h2{
 	font-size: 45px;
 }
@@ -207,7 +205,7 @@ footer {
 }
 #software .col-md-6{
 	padding-top: 40px;
-	padiing-bottom:20px;
+	/*padiing-bottom:20px;*/
 }
 #software .col-md-6 p{
 	padding-top: 30px;
@@ -294,13 +292,10 @@ footer {
 /*前端导航背景结束*/
 /*主体内容*/
 #front-content .container{
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 0px;
 	margin-bottom: -50px;
 }
 #front-content .container .col-md-2{
-	padding: 0px;
+
 	background:#0593e5;
 }
 #front-content .container .nav-pills > li{
@@ -320,7 +315,7 @@ footer {
 }
 #front-content .container .col-md-10 .col-md-3{
 	padding-top: 40px;
-	padding-left: 20px;
+	padding-right: 30px;
 }
 #front-content .container .col-md-10 .col-md-3 a{
 	text-decoration: none;
