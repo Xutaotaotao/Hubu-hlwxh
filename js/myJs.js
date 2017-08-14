@@ -22,3 +22,4 @@
 // ****************************资源下载页***********************//
 //下载页添加roolIn动效
 $("#source-download .col-lg-3").addClass("wow rollIn");
+$("#organization .col-md-4").addClass("wow zoomIn");
