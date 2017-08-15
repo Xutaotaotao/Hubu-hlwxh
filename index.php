@@ -1,62 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="徐涛焘">
-    <meta name="copyright" content="湖北大学互联网协会">
-    <meta name="keywords" content="湖北大学互联网协会,湖北大学，互联网协会">
-    <meta name="description" content="湖北大学互联网协会">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>湖北大学互联网协会</title>
-    <!-- CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- CSS -->
-    <!--[if lt IE 9]>
-        <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
-    <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
-    <!--[endif]-->
-</head>
-
-<body>
-    <!-- 导航 -->
-    <header class="header" id="wx-header">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">互联网协会</a>
-                </div>
-                <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="index.html">首页</a>
-                        </li>
-                        <li>
-                            <a href="frontEnd.html">前端导航</a>
-                        </li>
-                        <li>
-                            <a href="source.html">资源下载</a>
-                        </li>
-                        <li>
-                            <a href="">相册</a>
-                        </li>
-                        <li>
-                            <a href="">博客</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<?php get_header(); ?>
     <!-- 导航结束 -->
     <!-- 首页背景-->
     <section id="myCarousel" class="carousel slide">
@@ -69,21 +11,21 @@
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url(img/bg-1.jpg);"></div>
+                <div class="fill" style="background-image:url(<?php bloginfo('template_url'); ?>/img/bg-1.jpg);"></div>
                 <div class="carousel-caption">
                     <h2 class="animated fadeInLeftBig">欢迎来互联网协会</h2>
                     <p class="animated fadeInRightBig">Welcome to the Internet Society of Hubu.</p>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('img/bg-2.jpg');"></div>
+                <div class="fill" style="background-image:url(<?php bloginfo('template_url'); ?>/img/bg-2.jpg);"></div>
                 <div class="carousel-caption">
                     <h2 class="animated fadeInDownBig">技术 & 实践</h2>
                     <p class="animated fadeInUpBig">You can get skills and practice.</p>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url(img/bg-3.jpg);"></div>
+                <div class="fill" style="background-image:url(<?php bloginfo('template_url'); ?>/img/bg-3.jpg);"></div>
                 <div class="carousel-caption">
                     <h2 class="animated rollIn">网络 + 应用</h2>
                     <p class="animated rotateInUpRight">Do something interesting on the internet.</p>
@@ -100,7 +42,7 @@
                     <h2 class="text-center wow fadeInDownBig">关于我们</h2>
                 </div>
                 <div class="col-md-6 wow fadeInLeftBig">
-                    <img src="img/about.jpg" alt="logo">
+                    <img src="<?php bloginfo('template_url'); ?>/img/about.jpg" alt="logo">
                 </div>
                 <div class="col-md-6 wow fadeInRightBig">
                     <p>湖北大学互联网应用协会，简称湖北大学互联网协会，成立于2005年，原隶属于湖北大学数学与计算机科学学院，现属于计算机与信息工程学院。 协会致力于服务同学，为同学解决困难，增强会员对计算机软件操作及互联网应用的能力，本协会为努力创建湖北大学的特色社团奋斗。
@@ -127,7 +69,7 @@
                             <li>
                                 <div class="image-hover effect-1">
                                     <div class="image-box">
-                                        <img src="img/president.png" alt="会长">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/president.png" alt="会长">
                                         <h2>会长</h2>
                                     </div>
                                     <div class="text-desc">
@@ -143,7 +85,7 @@
                             <li>
                                 <div class="image-hover effect-1">
                                     <div class="image-box">
-                                        <img src="img/activity.png" alt="活动部">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/activity.png" alt="活动部">
                                         <h2>活动部</h2>
                                     </div>
                                     <div class="text-desc">
@@ -160,7 +102,7 @@
                             <li>
                                 <div class="image-hover effect-1">
                                     <div class="image-box">
-                                        <img src="img/technical.png" alt="技术部">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/technical.png" alt="技术部">
                                         <h2>技术部</h2>
                                     </div>
                                     <div class="text-desc">
@@ -177,7 +119,7 @@
                             <li>
                                 <div class="image-hover effect-1">
                                     <div class="image-box">
-                                        <img src="img/vice-president.png" alt="副会长">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/vice-president.png" alt="副会长">
                                         <h2>副会长</h2>
                                     </div>
                                     <div class="text-desc">
@@ -193,7 +135,7 @@
                             <li>
                                 <div class="image-hover effect-1">
                                     <div class="image-box">
-                                        <img src="img/secretary.png" alt="秘书部">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/secretary.png" alt="秘书部">
                                         <h2>秘书部</h2>
                                     </div>
                                     <div class="text-desc">
@@ -210,7 +152,7 @@
                             <li>
                                 <div class="image-hover effect-1">
                                     <div class="image-box">
-                                        <img src="img/propaganda.png" alt="宣传部">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/propaganda.png" alt="宣传部">
                                         <h2>宣传部</h2>
                                     </div>
                                     <div class="text-desc">
@@ -241,7 +183,7 @@
                                 <li>
                                     <div class="image-hover effect-2">
                                         <div class="image-box">
-                                            <img src="img/web.png" alt="WEB前端开发">
+                                            <img src="<?php bloginfo('template_url'); ?>/img/web.png" alt="WEB前端开发">
                                             <h2>WEB前端开发</h2>
                                         </div>
                                         <div class="text-desc">
@@ -257,7 +199,7 @@
                                 <li>
                                     <div class="image-hover effect-2">
                                         <div class="image-box">
-                                            <img src="img/adobe.png" alt="多媒体软件应用">
+                                            <img src="<?php bloginfo('template_url'); ?>/img/adobe.png" alt="多媒体软件应用">
                                             <h2>多媒体软件应用</h2>
                                         </div>
                                         <div class="text-desc">
@@ -273,7 +215,7 @@
                                 <li>
                                     <div class="image-hover effect-2">
                                         <div class="image-box">
-                                            <img src="img/office.png" alt="Office应用">
+                                            <img src="<?php bloginfo('template_url'); ?>/img/office.png" alt="Office应用">
                                             <h2>Office应用</h2>
                                         </div>
                                         <div class="text-desc">
@@ -291,7 +233,7 @@
                                 <li>
                                     <div class="image-hover effect-2">
                                         <div class="image-box">
-                                            <img src="img/weixin.png" alt="微信公众平台的运营维护">
+                                            <img src="<?php bloginfo('template_url'); ?>/img/weixin.png" alt="微信公众平台的运营维护">
                                             <h2>微信公众平台的运营维护</h2>
                                         </div>
                                         <div class="text-desc">
@@ -307,7 +249,7 @@
                                 <li>
                                     <div class="image-hover effect-2">
                                         <div class="image-box">
-                                            <img src="img/system.png" alt="操作系统的安装和维护">
+                                            <img src="<?php bloginfo('template_url'); ?>/img/system.png" alt="操作系统的安装和维护">
                                             <h2>操作系统的安装和维护</h2>
                                         </div>
                                         <div class="text-desc">
@@ -323,7 +265,7 @@
                                 <li>
                                     <div class="image-hover effect-2">
                                         <div class="image-box">
-                                            <img src="img/net.png" alt="网络设备维护">
+                                            <img src="<?php bloginfo('template_url'); ?>/img/net.png" alt="网络设备维护">
                                             <h2>网络设备维护</h2>
                                         </div>
                                         <div class="text-desc">
@@ -441,17 +383,17 @@
                 <div class="foot-left ">
                     <div class="col-md-4">
                         <div class="col-xs-4">
-                            <img src="img/qq-group.jpg" alt="QQ交流群">
+                            <img src="<?php bloginfo('template_url'); ?>/img/qq-group.jpg" alt="QQ交流群">
                             <p class="text-center">QQ群:
                                 <br>423186527</p>
                         </div>
                         <div class="col-xs-4">
-                            <img src="img/qq.jpg" class="img-responsive" alt="官方QQ">
+                            <img src="<?php bloginfo('template_url'); ?>/img/qq.jpg" class="img-responsive" alt="官方QQ">
                             <p class="text-center">官方QQ：
                                 <br>2284036801</p>
                         </div>
                         <div class="col-xs-4">
-                            <img src="img/Wechat.jpg" alt="官方微信公众号">
+                            <img src="<?php bloginfo('template_url'); ?>/img/Wechat.jpg" alt="官方微信公众号">
                             <p class="text-center">微信公众号：
                                 <br>网小蓝</p>
                         </div>
@@ -472,7 +414,7 @@
                 </div>
                 <div class="footer-right ">
                     <div class="col-md-4">
-                        <img src="img/Hubu-hlwxh.jpg" alt="foot-log" class="img-circle">
+                        <img src="<?php bloginfo('template_url'); ?>/img/Hubu-hlwxh.jpg" alt="foot-log" class="img-circle">
                         <strong>湖北大学互联网协会</strong>
                         <p>成为最有趣的互联网团队</p>
                         <p>Copyright<span>©</span>湖北大学互联网协会.All Rights Reserved.</p>
@@ -483,20 +425,4 @@
     </footer>
     <!--页脚结束-->
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- js -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/myJs.js"></script>
-    <script>
-    new WOW().init();
-    </script>
-    <!-- banner的js -->
-    <script>
-    $('.carousel').carousel({
-        interval: 4000
-    })
-    </script>
-</body>
-
-</html>
+<?php get_footer(); ?>
