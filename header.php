@@ -10,13 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php if ( is_home() ) {
-        bloginfo('name'); echo " - "; bloginfo('description');
+        bloginfo('name'); echo " "; bloginfo('description');
     } elseif ( is_category() ) {
-        single_cat_title(); echo " - "; bloginfo('name');
+        single_cat_title(); echo " "; bloginfo('name');
     } elseif (is_single() || is_page() ) {
         single_post_title();
     } elseif (is_search() ) {
-        echo "搜索结果"; echo " - "; bloginfo('name');
+        echo "搜索结果"; echo " "; bloginfo('name');
     } elseif (is_404() ) {
         echo '页面未找到!';
     } else {
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/animate.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" media="screen" />
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -42,19 +43,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">互联网协会</a>
+                    <a class="navbar-brand" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
                 </div>
                 <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                     <li <?php if (is_home()) { echo 'class="active"';} ?>><a title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">首页</a></li>
-                        <li class="active">
-                            <a href="index.php ">首页</a>
+                        <li>
+                            <a href="<?php bloginfo('template_url'); ?>/frontEnd.php">前端导航</a>
                         </li>
                         <li>
-                            <a href="frontEnd.php">前端导航</a>
-                        </li>
-                        <li>
-                            <a href="source.php">资源下载</a>
+                            <a href="<?php bloginfo('template_url'); ?>/source.php">资源下载</a>
                         </li>
                         <li>
                             <a href="">相册</a>
