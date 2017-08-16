@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" type="text/css" media="screen" />
     <?php wp_head(); ?>
 </head>
-
+<?php flush(); ?>
 <body>
     <!-- 导航 -->
     <header class="header" id="wx-header">
@@ -47,19 +47,10 @@
                 </div>
                 <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                    <li <?php if (is_home()) { echo 'class="active"';} ?>><a title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">首页</a></li>
-                        <li>
-                            <a href="<?php bloginfo('template_url'); ?>/frontEnd.php">前端导航</a>
-                        </li>
-                        <li>
-                            <a href="<?php bloginfo('template_url'); ?>/source.php">资源下载</a>
-                        </li>
-                        <li>
-                            <a href="">相册</a>
-                        </li>
-                        <li>
-                            <a href="">博客</a>
-                        </li>
+                    <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
+                    <li <?php if (is_home()) { echo 'class="current"';} ?>>
+                    <a title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">主页</a>
+                    </li>
                     </ul>
                 </div>
             </div>

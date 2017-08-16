@@ -342,7 +342,18 @@
                     <div class="col-md-12 text-center wow fadeInUpBig">
                         <h2>最近动态</h2>
                     </div>
+
                     <div class="col-sm-6 col-md-4 wow rollIn">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+                                <p><?php the_content(); ?></p>
+                                <p><a href="<?php the_permalink(); ?>" class="btn btn-primary" role="button">阅读全文</a> <a href="#" class="btn btn-default" role="button"><?php the_time('Y年n月j日') ?></a><?php edit_post_link('编辑', ' • ', ''); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                   
+<!--                     <div class="col-sm-6 col-md-4 wow rollIn">
                         <div class="thumbnail">
                             <img src="#" alt="...">
                             <div class="caption">
@@ -361,18 +372,9 @@
                                 <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 wow rollIn">
-                        <div class="thumbnail">
-                            <img src="#" alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
+
             </div>
         </div>
     </section>

@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 .navbar-inverse {
     width: 100%;
-    background: rgba(0, 0, 0, 0);
+    background: #0593e5;
     color: #ddd;
     font-size: 32px;
     text-align: center;
