@@ -353,10 +353,9 @@
                         } ?>
                    <?php the_excerpt(); ?> 
                     <p class="postmetadata"><!--文章数据-->
-                           <span>作者:<?php  the_author(); ?></span> 
+                           <span >作者:<?php  the_author(); ?></span> 
                            <span>发布日期：<?php the_time(Y-m-d);?></span>
                             <br>
-
                             <button class="btn btn-primary" onclick="window.location.href='<?php the_permalink(); ?>'"> 阅读全文</button>
                            <button class="btn"> <?php edit_post_link('Edit', ' &#124; ', ''); ?></button>
                     </p>
