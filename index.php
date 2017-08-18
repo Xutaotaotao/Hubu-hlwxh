@@ -1,87 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="徐涛焘">
-    <meta name="copyright" content="湖北大学互联网协会">
-    <meta name="keywords" content="湖北大学互联网协会,湖北大学，互联网协会">
-    <meta name="description" content="湖北大学互联网协会">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" > 
-
-    <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" >
-    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-    <!-- CSS -->
-    <link href="<?php echo bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo bloginfo('template_url'); ?>/css/animate.min.css" rel="stylesheet">
-    <link href="<?php echo bloginfo('template_url'); ?>/css/style.css" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <?php wp_get_archives('type=monthly&format=link'); ?>
-    <?php wp_head(); ?>
-</head>
-
-<body>
-    <!-- 导航 -->
-    <header id="header">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php bloginfo('url');?>"><?php bloginfo(name);?></a>
-                </div>
-                <?php wp_nav_menu( 
-                array( 'menu' => 'mymenu', 
-                       'container' => 'div',
-                       'container_class' => 'collapse navbar-collapse',
-                       'menu_class' => 'nav navbar-nav navbar-right',
-                        'depth' => 1) );?>
-            </div>
-        </nav>
-            
-    </header>
-    <!-- <header class="header" id="wx-header">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">互联网协会</a>
-                </div>
-                <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
-                            <a href="index.html ">首页</a>
-                        </li>
-                        <li>
-                            <a href="frontEnd.html">前端导航</a>
-                        </li>
-                        <li>
-                            <a href="source.html">资源下载</a>
-                        </li>
-                        <li>
-                            <a href="">相册</a>
-                        </li>
-                        <li>
-                            <a href="">博客</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header> -->
-    <!-- 导航结束 -->
+<?php get_header(); ?>
     <!-- 首页背景-->
     <section id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -418,49 +335,47 @@
     </section>
     <!--软件结束-->
     <section id="news">
-        <div class="news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center wow fadeInUpBig">
-                        <h2>最近动态</h2>
-                    </div>
-                    <div class="col-sm-6 col-md-4 wow rollIn">
-                        <div class="thumbnail">
-                            <img src="#" alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 wow rollIn">
-                        <div class="thumbnail">
-                            <img src="#" alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 wow rollIn">
-                        <div class="thumbnail">
-                            <img src="#" alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container">
+         <div class="row">
+             <div class="col-md-12 text-center wow fadeInUpBig">
+                    <h2>最近动态</h2>
+            </div>
+            <?php if(have_posts()) : ?><?php while(have_posts()) : the_post();?>
+            <div class="post col-sm-6 col-md-4 wow rollIn" id="post-<?php the_ID();?>">
+                <h2 class="text-center">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </h2>
+                <div class="thumbnail">
+                    <?php if(has_post_thumbnail()){
+                       echo '<a href="'.get_permalink().'" title="阅读全文">';  
+                       the_post_thumbnail('thumbnail');  
+                       echo '</a>';  
+                        } ?>
+                   <?php the_excerpt(); ?> 
+                    <p class="postmetadata"><!--文章数据-->
+                           <span>作者:<?php  the_author(); ?></span> 
+                           <span>发布日期：<?php the_time(Y-m-d);?></span>
+                            <br>
+
+                            <button class="btn btn-primary" onclick="window.location.href='<?php the_permalink(); ?>'"> 阅读全文</button>
+                           <button class="btn"> <?php edit_post_link('Edit', ' &#124; ', ''); ?></button>
+                    </p>
                 </div>
             </div>
-        </div>
+            <?php endwhile; ?>
+                <div class="navigation">
+                    <?php posts_nav_link(); ?>
+                </div>
+            <?php else : ?>
+                <h2>Not Found</h2>
+            <?php endif; ?>
+         </div>
+    </div>
+
     </section>
     <!--页脚-->
     <footer id="wx-footer">
-        <div class="container wow fadeInUpBig">
+        <div class="container">
             <div class="row">
                 <div class="foot-left ">
                     <div class="col-md-4">
@@ -506,21 +421,4 @@
         </div>
     </footer>
     <!--页脚结束-->
-    <!-- jQuery -->
-    <script src="<?php echo bloginfo('template_url'); ?>/js/jquery.js"></script>
-    <!-- js -->
-    <script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-    <script src="<?php echo bloginfo('template_url'); ?>/js/wow.min.js"></script>
-    <script src="<?php echo bloginfo('template_url'); ?>/js/myJs.js"></script>
-    <script>
-    new WOW().init();
-    </script>
-    <!-- banner的js -->
-    <script>
-    $('.carousel').carousel({
-        interval: 4000
-    })
-    </script>
-</body>
-
-</html>
+ <?php get_footer(); ?>

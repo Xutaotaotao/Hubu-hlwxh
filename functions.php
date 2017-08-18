@@ -10,4 +10,8 @@ function mytheme_setup() {
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );
 register_nav_menus();
+function emtx_excerpt_length( $length ) {
+	return 100; 
+}
+add_filter( 'excerpt_length', 'emtx_excerpt_length' );
 ?>

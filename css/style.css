@@ -1,4 +1,4 @@
-/*
+
 Theme Name: Hubu-hlwxh
 Theme URI: www.xutaotao.cn
 Description: 湖北大学互联网协会官网
@@ -381,7 +381,10 @@ h1,h2,h3,h4,h5,h6,p,a{
 /*新闻*/
 
 #news {
-    padding-top: 40px;
+    /*padding-top: 40px;*/
+    background: #fff;
+    color: #4a5648;
+
 }
 
 #news .col-md-12 h2 {
@@ -393,6 +396,10 @@ h1,h2,h3,h4,h5,h6,p,a{
     padding-top: 40px;
 }
 
+#news .thumbnail img{
+width: 480px;
+height:  270px;
+}
 
 /*新闻结束*/
 
@@ -406,7 +413,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 /*前端导航背景*/
 #frontEnd-bg {
-    background: url("../frontImg/frontEnd.jpg");
+    background: url("../img/frontEnd.jpg");
     width: 100%;
     height: 100%;
     -webkit-background-size: cover;
@@ -591,14 +598,54 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 /*************************************************协会资源样式结束*******************************************/
 /*页脚*/
+/*单文章页样式*/
+#news{
+    padding-bottom:40px; 
+    margin-bottom: 30px;
+}
+#news .alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
 
+#news .alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+#news .aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#news .single-post h2{
+    padding-top: 40px;
+
+}
+
+
+#news .navigation span{
+    font-weight: 500;
+    font-size: 20px;
+}
+#single-footer {
+    background-color: #0593e5;
+    color: #fff;
+}
 #wx-footer {
+    width: 100%;
     background: #0593e5;
     color: #fff;
     margin-bottom: 0;
     padding-top: 20px;
 }
-
+#wx-footer .container .row .col-md-12 a{
+    color: #fff;
+}
 #wx-footer .footer-right img {
     width: 70px;
     height: 70px;
@@ -632,4 +679,4 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 
-/*页脚结束*/
+/*页脚结束
