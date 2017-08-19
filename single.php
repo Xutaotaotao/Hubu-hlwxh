@@ -1,31 +1,34 @@
 <?php get_header(); ?>
-    	<div class="container" id="news">
-    		        <?php if(have_posts()) : ?><?php while(have_posts()) : the_post();?>
+<div id="single">
+    <div class="container" >
+                    <?php if(have_posts()) : ?><?php while(have_posts()) : the_post();?>
             <div class="single-post" id="post-<?php the_ID();?>">
                 <h2 class="text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 <div class="post-content ">
-	                <p class="postmetadata text-center" ><!--文章数据-->
-	                    作者:<?php  the_author(); ?>
-	                   <button class="btn"><?php edit_post_link('Edit', ' &#124; ', ''); ?></button> 
-	                 </p>
+                    
+                    <p class="text-center">
+                        <span class="badge">作者:</span><?php  the_author(); ?> 
+                        <span class="badge">发布日期：</span> <?php the_time('Y-m-j');?>
+                        <span ><?php edit_post_link('Edit', ' &#124; ', ''); ?></span> 
+                    </p>
                     <?php the_content(); ?> 
                     <?php link_pages('<p>Pages:','</p>','number'); ?>  
                 </div>
             </div>
         <?php endwhile; ?>
-        <div class="row">
-        	<div class="col-md-12">
-        		<div class="navigation text-center">
-              <span>上一篇：<?php previous_post_link('%link') ?></span> 
-              <span>下一篇：<?php next_post_link('%link') ?></span>
-            </div>
-        	</div>
-        </div>
-            
+        <div class="single-guide">
+             <nav class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container">
+                     <p class="text-center"><button class="btn btn_default"> 上一篇：</button>
+                        <?php previous_post_link('%link') ?><button class="btn btn_default">下一篇：</button><?php next_post_link('%link') ?></p>
+                </div>
+            </nav>
+        </div>   
         <?php else : ?>
             <h2>Not Found</h2>
         <?php endif; ?>
-    	</div>
+        </div>
+</div>
     	<div>
     		<nav class="navbar navbar-default navbar-fixed-bottom" id="single-footer">
   			<div class="container">
@@ -33,8 +36,4 @@
   			</div>
 		</nav>
     	</div>
-    	
-
-  
-    <!--页脚结束-->
 <?php get_footer(); ?>

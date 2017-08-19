@@ -1,13 +1,11 @@
 <?php get_header(); ?>
     <!-- 首页背景-->
     <section id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <div class="fill" style="background-image:url(<?php bloginfo('template_url'); ?>/img/bg-1.jpg);"></div>
@@ -168,7 +166,7 @@
         </div>
     </section>
     <!--组织结构结束-->
-    <!--技能-->
+    <!--我们涉及的技术-->
     <section id="skill">
         <div class="skill">
             <div class="container">
@@ -280,8 +278,8 @@
             </div>
         </div>
     </section>
-    <!--技能结束-->
-    <!--软件-->
+    <!--我们涉及的技术结束-->
+    <!--我们的实力-->
     <section id="software">
         <div class="software">
             <div class="container">
@@ -333,14 +331,18 @@
             </div>
         </div>
     </section>
-    <!--软件结束-->
+    <!--我们的实力结束-->
     <section id="news">
     <div class="container">
          <div class="row">
              <div class="col-md-12 text-center wow fadeInUpBig">
                     <h2>最近动态</h2>
             </div>
-            <?php if(have_posts()) : ?><?php while(have_posts()) : the_post();?>
+            <?php 
+            query_posts("showposts=3&category_name='news'");
+            ?>
+            <?php if(have_posts() ): ?>
+            <?php  while(have_posts()):the_post();?>
             <div class="post col-sm-6 col-md-4 wow rollIn" id="post-<?php the_ID();?>">
                 <h2 class="text-center">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -352,19 +354,21 @@
                        echo '</a>';  
                         } ?>
                    <?php the_excerpt(); ?> 
-                    <p class="postmetadata"><!--文章数据-->
-                           <span >作者:<?php  the_author(); ?></span> 
-                           <span>发布日期：<?php the_time(Y-m-d);?></span>
-                            <br>
-                            <button class="btn btn-primary" onclick="window.location.href='<?php the_permalink(); ?>'"> 阅读全文</button>
-                           <button class="btn"> <?php edit_post_link('Edit', ' &#124; ', ''); ?></button>
+                   <!--文章数据-->
+                    <p >
+                        <span class="badge">作者:</span><?php  the_author(); ?> 
                     </p>
+                    <p>
+                        <span class="badge">发布日期：</span> <?php the_time('Y-m-j');?>
+                    </p>
+                    <p>
+                        <button class="btn btn-info" onclick="window.location.href='<?php the_permalink(); ?>'"> 阅读全文</button>
+                        <span><?php edit_post_link('编辑', ' &#124; ', ''); ?></span>
+                    </p>
+
                 </div>
             </div>
             <?php endwhile; ?>
-                <div class="navigation">
-                    <?php posts_nav_link(); ?>
-                </div>
             <?php else : ?>
                 <h2>Not Found</h2>
             <?php endif; ?>

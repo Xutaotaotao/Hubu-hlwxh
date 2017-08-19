@@ -1,4 +1,4 @@
-
+/*
 Theme Name: Hubu-hlwxh
 Theme URI: www.xutaotao.cn
 Description: 湖北大学互联网协会官网
@@ -7,6 +7,7 @@ Author: 徐涛焘
 Author URI:  www.xutaotao.cn
 Tags: 湖北大学互联网协会，湖北大学，互联网协会
 */
+/**********************************************通配样式***********************************************/
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,6 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 
 /*导航*/
-
 .navbar-inverse {
     width: 100%;
     background: #0593e5;
@@ -152,16 +152,12 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 .carousel-caption {
     position: absolute;
-    /*right: 70%;*/
-    /*bottom: 40%;*/
-    /*left: 30%;*/
     z-index: 10;
     left: 60px;
     text-align: left;
     top: 30%;
     bottom: 70%;
     color: #fff;
-    /*text-align: center;*/
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
@@ -172,8 +168,6 @@ h1,h2,h3,h4,h5,h6,p,a{
 .carousel-caption p {
     font-size: 30px;
 }
-
-
 /*banner结束*/
 
 
@@ -224,13 +218,9 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 #organization .image-hover {
-    /*float: left;*/
-    /*width: 100%;*/
     position: relative;
     overflow: hidden;
     text-align: center;
-    /*border-radius: 50%;*/
-    /*border: 4px solid rgba(255, 255, 255, 0.9);*/
 }
 
 #organization .image-hover .image-box {
@@ -272,7 +262,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 /*组织结构结束*/
 
 
-/*技能*/
+/*我们涉及的技术*/
 
 #skill .row {
     padding-top: 40px;
@@ -289,13 +279,9 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 #skill .image-hover {
-    /*float: left;*/
-    /*width: 100%;*/
     position: relative;
     overflow: hidden;
     text-align: center;
-    /*border-radius: 50%;*/
-    /*border: 4px solid rgba(255, 255, 255, 0.9);*/
 }
 
 #skill .image-hover .image-box {
@@ -345,11 +331,10 @@ h1,h2,h3,h4,h5,h6,p,a{
     color: #4a5648;
 }
 
+/*我们涉及的技术结束*/
 
-/*技能结束*/
 
-
-/*技术实力*/
+/*我们的实力*/
 
 #software .software {
     background: #0593e5;
@@ -375,10 +360,10 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 
-/*技术实力结束*/
+/*我们的实力结束*/
 
 
-/*新闻*/
+/*最近动态*/
 
 #news {
     /*padding-top: 40px;*/
@@ -401,13 +386,54 @@ width: 480px;
 height:  270px;
 }
 
-/*新闻结束*/
+/*最近动态结束*/
 
+/*页脚*/
+
+#wx-footer {
+    width: 100%;
+    background: #0593e5;
+    color: #fff;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+#wx-footer .container .row .col-md-12 a{
+    color: #fff;
+}
+#wx-footer .footer-right img {
+    width: 70px;
+    height: 70px;
+}
+
+#wx-footer .footer-right .col-md-4 strong {
+    margin: 0 10px;
+}
+
+#wx-footer .footer-right .col-md-4 p {
+    padding-top: 20px;
+}
+
+#wx-footer .footer-right .col-md-4 span {
+    margin: 0 3px;
+}
+
+#wx-footer .footer-center .col-md-4 li {
+    list-style-type: none;
+}
+
+#wx-footer .footer-center .col-md-4 li a {
+    color: #fff;
+}
+
+#wx-footer .footer-center .col-md-4 li a:hover {
+    text-decoration: none;
+    color: #0593e5;
+    background-color: #fff;
+    border-radius: 4px;
+}
+/*页脚结束
 
 /**********************************************首页样式结束***********************************************/
-
-
-
 
 /*************************************************前端导航样式*******************************************/
 
@@ -555,7 +581,7 @@ height:  270px;
 /*************************************************前端导航样式结束*******************************************/
 
 
-/*************************************************资源下载样式*******************************************/
+/*************************************************资源下载页样式********************************************/
 /*资源下载背景*/
 #source-bg {
     background: url("../img/source.jpg");
@@ -596,87 +622,59 @@ height:  270px;
 /*资源下载背景结束*/
 
 
-/*************************************************协会资源样式结束*******************************************/
-/*页脚*/
-/*单文章页样式*/
-#news{
+/*************************************************资源下载页样式结束*******************************************/
+
+/*************************************************单文章页样式************************************************/
+
+#single .container{
     padding-bottom:40px; 
     margin-bottom: 30px;
 }
-#news .alignleft {
+#single .alignleft {
     display: inline;
     float: left;
     margin-right: 1.5em;
 }
 
-#news .alignright {
+#single .alignright {
     display: inline;
     float: right;
     margin-left: 1.5em;
 }
 
-#news .aligncenter {
+#single .aligncenter {
     clear: both;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#news .single-post h2{
+#single .container .single-post h2{
     padding-top: 40px;
 
 }
 
 
-#news .navigation span{
+#single .navigation span{
     font-weight: 500;
     font-size: 20px;
+}
+.single-guide .navbar-default{
+    background-color: #fff;
+    border: transparent;
 }
 #single-footer {
     background-color: #0593e5;
     color: #fff;
 }
-#wx-footer {
-    width: 100%;
-    background: #0593e5;
-    color: #fff;
-    margin-bottom: 0;
-    padding-top: 20px;
-}
-#wx-footer .container .row .col-md-12 a{
-    color: #fff;
-}
-#wx-footer .footer-right img {
-    width: 70px;
-    height: 70px;
-}
-
-#wx-footer .footer-right .col-md-4 strong {
-    margin: 0 10px;
-}
-
-#wx-footer .footer-right .col-md-4 p {
-    padding-top: 20px;
-}
-
-#wx-footer .footer-right .col-md-4 span {
-    margin: 0 3px;
-}
-
-#wx-footer .footer-center .col-md-4 li {
-    list-style-type: none;
-}
-
-#wx-footer .footer-center .col-md-4 li a {
-    color: #fff;
-}
-
-#wx-footer .footer-center .col-md-4 li a:hover {
-    text-decoration: none;
-    color: #0593e5;
-    background-color: #fff;
-    border-radius: 4px;
-}
+/*************************************************单文章页样式************************************************/
 
 
-/*页脚结束
+
+/*************************************************协会动态页样式**********************************************/
+
+/*************************************************协会动态页样式结束**********************************************/
+
+/*************************************************协会博客页样式结束**********************************************/
+
+/*************************************************协会博客页样式结束**********************************************/
