@@ -21,10 +21,13 @@
         <div class="single-guide">
             <nav class="navbar navbar-default navbar-fixed-bottom">
                 <p class="text-center">
-                    <span> 上一篇：</span>
-                    <?php previous_post_link('%link') ?>
-                    <span>下一篇：</span>
-                    <?php next_post_link('%link') ?>
+                    <?php 
+                        previous_post_link('<span> 上一篇：</span>%link');
+                     ?>
+                    
+                    <?php 
+                        next_post_link('<span>下一篇：</span>%link');
+                    ?>
                 </p>
             </nav>
         </div>

@@ -47,8 +47,8 @@ Template Name:News
         <nav class="navbar navbar-default navbar-fixed-bottom">
             <p class="text-center">
                 <span>
-                            <?php posts_nav_link('&nbsp;','上一页','下一页'); ?>
-                        </span>
+                    <?php posts_nav_link('&nbsp;','上一页','下一页'); ?>
+                </span>
             </p>
         </nav>
     </div>

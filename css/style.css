@@ -400,9 +400,16 @@ a {
     padding-top: 40px;
 }
 
+#news .post-img{
+    width: auto;
+    height: 300px;
+}
 #news .thumbnail img {
-    width: 480px;
-    height: 270px;
+   clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   width: auto;   
 }
 
 
@@ -739,8 +746,8 @@ a {
 }
 
 #page-news .thumbnail img {
-    width: 480px;
-    height: 270px;
+    max-width: 480px;
+   max-height: 270px;
 }
 
 
