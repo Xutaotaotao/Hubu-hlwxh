@@ -523,13 +523,12 @@ Template Name:前端导航
 </section>
 <!--侧边导航结束-->
 <!--前端导航结束-->
+<!--页脚-->
 <footer id="wx-footer">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <p>Copyright &#169; 2017 &nbsp;
-                    <a href="<?php bloginfo('url');?>">湖北大学互联网协会</a> &nbsp; All Rights Reserved.
-                </p>
+                <p>Copyright<span>©</span>湖北大学互联网协会.All Rights Reserved.</p>
             </div>
         </div>
     </div>

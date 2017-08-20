@@ -21,12 +21,13 @@
         <div class="single-guide">
             <nav class="navbar navbar-default navbar-fixed-bottom">
                 <p class="text-center">
+                <span> 上一篇：</span>
                     <?php 
-                        previous_post_link('<span> 上一篇：</span>%link');
+                        previous_post_link('%link','%title');
                      ?>
-                    
+                <span>下一篇：</span>
                     <?php 
-                        next_post_link('<span>下一篇：</span>%link');
+                        next_post_link('%link','%title');
                     ?>
                 </p>
             </nav>
@@ -36,11 +37,5 @@
         <?php endif; ?>
     </div>
 </div>
-<div>
-    <nav class="navbar navbar-default navbar-fixed-bottom" id="single-footer">
-        <div class="container">
-            <p class="text-center">Copyright<span>©</span>湖北大学互联网协会 &nbsp; All Rights Reserved.</p>
-        </div>
-    </nav>
-</div>
+<?php get_template_part('singlefooter'); ?>
 <?php get_footer(); ?>

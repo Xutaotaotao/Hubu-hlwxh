@@ -56,10 +56,5 @@ Template Name:News
     <h2>Not Found</h2>
     <?php endif; ?>
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom" id="single-footer">
-    <div class="container">
-        <p class="text-center">Copyright<span>©</span>湖北大学互联网协会 &nbsp; All Rights Reserved.</p>
-    </div>
-</nav>
-</div>
+<?php get_template_part('singlefooter'); ?>
 <?php get_footer(); ?>
