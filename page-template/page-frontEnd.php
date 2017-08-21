@@ -3,7 +3,9 @@
 Template Name:前端导航
 */
  ?>
-<?php get_header(); ?>
+<?php 
+get_header(); 
+?>
 <!--前端导航-->
 <!--前端导航背景-->
 <section id="frontEnd-bg">
@@ -21,10 +23,11 @@ Template Name:前端导航
     </div>
 </section>
 <!--前端导航背景结束-->
-<!--侧边导航-->
+<!--主体内容-->
 <section id="front-content">
     <div class="container">
         <div class="row">
+        <!--侧边导航-->
             <div class="col-md-2 text-center">
                 <ul class="nav nav-pills nav-stacked text-center" role="tablist">
                     <li role="presentation"><a href="#basic" aria-controls="profile" role="tab" data-toggle="tab">基础教程</a></li>
@@ -36,6 +39,7 @@ Template Name:前端导航
                     <li role="presentation"><a href="#developer" aria-controls="profile" role="tab" data-toggle="tab">开发社区</a></li>
                 </ul>
             </div>
+        <!--侧边导航结束-->
             <div class="col-md-10 text-center">
                 <div class="tab-content">
                     <div class="tab-pane active" id="basic">
@@ -521,7 +525,7 @@ Template Name:前端导航
         </div>
     </div>
 </section>
-<!--侧边导航结束-->
+<!--主体内容-->
 <!--前端导航结束-->
 <!--页脚-->
 <footer id="wx-footer">
@@ -534,4 +538,6 @@ Template Name:前端导航
     </div>
 </footer>
 <!--页脚结束-->
-<?php get_footer(); ?>
+<?php 
+get_footer(); 
+?>

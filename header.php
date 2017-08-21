@@ -12,8 +12,12 @@
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
     <meta name="generator" content="WordPress <?php bloginfo('version'); ?>">
     <title>
-        <?php bloginfo('name'); ?>
-        <?php wp_title(); ?>
+        <?php 
+        bloginfo('name'); 
+        ?>
+        <?php 
+        wp_title(); 
+        ?>
     </title>
     <!-- CSS -->
     <link href="<?php echo bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
@@ -21,8 +25,12 @@
     <link href="<?php echo bloginfo('template_url'); ?>/css/style.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <?php wp_get_archives('type=monthly&format=link'); ?>
-    <?php wp_head(); ?>
+    <?php 
+    wp_get_archives('type=monthly&format=link');
+     ?>
+    <?php
+     wp_head(); 
+     ?>
 </head>
 
 <body>
@@ -38,16 +46,23 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="<?php bloginfo('url');?>">
-                        <?php bloginfo(name);?>
+                        <?php 
+                        bloginfo(name);
+                        ?>
                     </a>
                 </div>
-                <?php wp_nav_menu( 
-                array( 'menu' => 'mymenu', 
-                       'container' => 'div',
+                <?php 
+                wp_nav_menu( 
+                array(
+                       'menu'            => 'mymenu', 
+                       'container'       => 'div',
                        'container_class' => 'collapse navbar-collapse',
-                       'container_id' => 'bs-example-navbar-collapse-1',
-                       'menu_class' => 'nav navbar-nav navbar-right',
-                        'depth' => 1) );?>
+                       'container_id'    => 'bs-example-navbar-collapse-1',
+                       'menu_class'      => 'nav navbar-nav navbar-right',
+                       'depth'           => 1
+                       ) 
+                );
+                ?>
             </div>
         </nav>
     </header>

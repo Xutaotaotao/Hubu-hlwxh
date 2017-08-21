@@ -3,7 +3,9 @@
 Template Name:资源下载
 */
  ?>
-<?php get_header(); ?>
+<?php 
+get_header(); 
+?>
 <!-- 导航结束 -->
 <!--资源下载-->
 <section id="source-bg">
@@ -131,4 +133,6 @@ Template Name:资源下载
     </div>
 </footer>
 <!--页脚结束-->
-<?php get_footer(); ?>
+<?php 
+get_footer(); 
+?>
