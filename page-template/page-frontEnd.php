@@ -8,12 +8,12 @@ get_header();
 ?>
 <!--前端导航-->
 <!--前端导航背景-->
-<section id="frontEnd-bg">
-    <div class="frontEnd-text">
+<section id="front-bg">
+    <div class="front-bg-text">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="source-text">
+                    <div class="front-text">
                         <h2 class="wow animated rotateInDownLeft">欢迎来到前端导航页</h2>
                         <p class="wow animated rotateInUpLeft">给你一些实用有趣的工具和网站。</p>
                     </div>

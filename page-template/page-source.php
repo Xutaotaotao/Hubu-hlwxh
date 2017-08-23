@@ -9,12 +9,14 @@ get_header();
 <!-- 导航结束 -->
 <!--资源下载-->
 <section id="source-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="source-text">
-                    <h2 class="wow animated slideInDown">欢迎来到资源下载页</h2>
-                    <p class="wow animated slideInUp">我们不是资源的生产者，我们只是资源的搬运工。</p>
+    <div class="source-bg-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="source-text">
+                        <h2 class="wow animated slideInDown">欢迎来到资源下载页</h2>
+                        <p class="wow animated slideInUp">我们不是资源的生产者，我们只是资源的搬运工。</p>
+                    </div>
                 </div>
             </div>
         </div>

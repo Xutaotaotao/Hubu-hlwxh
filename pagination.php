@@ -184,7 +184,7 @@
                                     </div>
                                     <div class="text-desc">
                                         <h3>WEB前端开发</h3>
-                                        <p>WEB前端开发方向主要涉及网页制作技术培训,研究和学习HTML，CSS，JavaScript以及一些热门的前端框架。</p>
+                                        <p>WEB前端开发方向主要涉及网页制作,研究和学习HTML，CSS，JavaScript以及一些热门的前端框架。</p>
                                     </div>
                                 </div>
                             </li>

@@ -6,13 +6,23 @@ Template Name:News
 <?php
  get_header(); 
 ?>
+<section id="news-bg">
+    <div class="news-bg-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="news-text">
+                        <h2 class="wow animated rotateInDownLeft">终于等到你</h2>
+                        <p class="wow animated rotateInUpLeft">快来了解互联网协会的最新资讯</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <div id="page-news">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center ">
-                <h2 class="wow bounceInLeft">终于等到你！</h2>
-                <h2 class="wow bounceInRight">快来了解互联网协会的最新资讯。</h2>
-            </div>
             <?php 
             if(have_posts() ): 
             ?>
@@ -64,7 +74,7 @@ Template Name:News
     </div>
     <div class="post-nav">
         <!--文章导航-->
-        <nav class="navbar navbar-default navbar-fixed-bottom">
+       
             <p class="text-center">
                 <span>
                     <?php 
@@ -72,19 +82,21 @@ Template Name:News
                     ?>
                 </span>
             </p>
-        </nav>
+        
     </div>
-    <?php 
-    else : 
-    ?>
+    <?php else : ?>
     <h2>Not Found</h2>
-    <?php 
-    endif; 
-    ?>
+    <?php endif; ?>
 </div>
-<?php 
-get_template_part('singlefooter'); 
-?>
+<footer id="wx-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Copyright<span>©</span>湖北大学互联网协会.All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 <?php 
 get_footer();
  ?>
