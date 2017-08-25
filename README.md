@@ -1,7 +1,7 @@
-#Hubu-hlwxh
-##项目简介
+<h1>Hubu-hlwxh</h1>
+<h2>项目简介</h2>
 此项目是为湖北大学互联网协会官网定制的一个wordpress主题。项目官网地址为http://hlwxh.xutaotao.cn
-##项目文件结构
+<h2>项目文件结构</h2>
 
 	[Hubu-hlwxh]
 	 |--[css]		  //css样式文件夹	
@@ -37,7 +37,7 @@
 	 |-- staticpage.php     //主题主页静态页面部分
 	 |--style.css           //声明主题信息css文件
  	 ...
-##主题使用方法
+<h2>主题使用方法<h2>
 <ul>
 <li>
 下载此项目:git clone该项目地址即可。
