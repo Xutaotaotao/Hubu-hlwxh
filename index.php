@@ -2,7 +2,7 @@
 get_header();
 ?>
 <?php
-get_template_part('pagination');
+get_template_part('staticpage');
 ?>
 <?php
 get_template_part('loop');
