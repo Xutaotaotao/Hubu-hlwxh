@@ -37,19 +37,14 @@
 	 |-- staticpage.php     //主题主页静态页面部分
 	 |--style.css           //声明主题信息css文件
  	 ...
-<h2>主题使用方法<h2>
-<ul>
-<li>
-<p>下载此项目:git clone该项目地址即可。</p>
-</li>
-<li>
-<p>项目依赖：</p>
-</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>	 
+<h2>主题使用方法</h2>
+下载此项目:git clone该项目地址即可。<br>
+项目依赖：
+
+
+
+
+
 
 	  
 	  
