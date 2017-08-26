@@ -7,7 +7,7 @@
 	 |--[css]		  //css样式文件夹	
 	 |   |-- animate.mini.css    
 	 |   |-- bootstrap.mini.css
-	 |   |-- style.css	  
+	 |   |-- style.css	  //自定义css样式文件
 	 |--[fonts]		//bootsrap组件字体图标库
 	 |   |-- glyphicons-halflings-regular.eot
 	 |   |-- glyphicons-halflings-regular.svg
@@ -19,7 +19,7 @@
 	 |--[js]		//js文件夹
 	 |   |-- bootstrap.min.css
 	 |   |-- jquery.js	
-	 |   |-- myJs.js	
+	 |   |-- myJs.js        //自定义js文件
 	 |   |-- wow.min.js
 	 |--[page-template]     //页面模板文件		
 	 |   |-- page-frontEnd.php //前端导航页面	
