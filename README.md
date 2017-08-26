@@ -8,7 +8,7 @@
 	 |   |-- animate.mini.css    
 	 |   |-- bootstrap.mini.css
 	 |   |-- style.css	  //自定义css样式文件
-	 |--[fonts]		//bootsrap组件字体图标库
+	 |--[fonts]		//bootsrap字体图标库
 	 |   |-- glyphicons-halflings-regular.eot
 	 |   |-- glyphicons-halflings-regular.svg
 	 |   |-- glyphicons-halflings-regular.ttf
