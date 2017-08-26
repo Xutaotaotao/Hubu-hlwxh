@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="徐涛焘">
-    <meta name="copyright" content="湖北大学互联网协会">
-    <meta name="keywords" content="湖北大学互联网协会,湖北大学，互联网协会">
-    <meta name="description" content="湖北大学互联网协会">
+    <meta charset="utf-8"/>
+    <meta name="author" content="徐涛焘"/>
+    <meta name="copyright" content="湖北大学互联网协会"/>
+    <meta name="keywords" content="湖北大学互联网协会,湖北大学，互联网协会"/>
+    <meta name="description" content="湖北大学互联网协会"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
-    <meta name="generator" content="WordPress <?php bloginfo('version'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>"/>
+    <meta name="generator" content="WordPress <?php bloginfo('version'); ?>"/>
     <title>
         <?php 
         bloginfo('name'); 
