@@ -19,6 +19,14 @@
         wp_title(); 
         ?>
     </title>
+    <script type="text/javascript">
+    if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")
+        [1].replace(/[ ]/g,"")=="MSIE6.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")
+        [1].replace(/[ ]/g,"")=="MSIE7.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")
+        [1].replace(/[ ]/g,"")=="MSIE8.0"){
+                alert("WOW,您的浏览器版本也太低了吧，请下载IE8以上版本查看本网站");
+            }
+    </script>
     <!-- CSS -->
     <link href="<?php echo bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo bloginfo('template_url'); ?>/css/animate.min.css" rel="stylesheet">
